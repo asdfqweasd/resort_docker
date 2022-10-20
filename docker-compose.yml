@@ -23,7 +23,6 @@ services:
           - $PWD/src:/var/www/html
         depends_on:
           - mysql
-          - myredis
         build:
             context: './src/php'
             dockerfile: dockerfile

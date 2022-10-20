@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -44,19 +44,17 @@
             <a href="../index.html"><img src="../image/_20201009154713.png" /></a>
         </ul>
     </div>
+
     
-    
-    <?php 
-    $servername = "mysql";
-    $username = "php";
-    $password = "php";
-    $dbname = "cloud_computing";
-    
-    $conn = mysqli_connect($servername, $username, $password,$dbname);
+    <?php
+        $servername = "mysql";
+        $username = "php";
+        $password = "php";
+        $dbname = "cloud_computing";
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
         }
-        echo "SQL connected successfully! <br>";
+        echo "SQL connected successfully!" ;
         echo "Server Info: ". mysqli_get_server_info($conn);
 
     $sql = "CREATE TABLE IF NOT EXISTS `Contact` (
@@ -68,12 +66,12 @@
         `age` varchar(255) NOT NULL,
         `favorite` text NOT NULL,
         `comment` text NOT NULL
-      ) "
+      )";
     
-    if($conn -> query($sql) === TRUE){
-        echo "no table"
-    }else{
-        echo "error" . $conn->error;
+    if ($conn->query($sql) === TRUE) {
+        echo "";
+    } else {
+        echo "Error creating table: " . $conn->error;
     }
     
     $conn->close();
