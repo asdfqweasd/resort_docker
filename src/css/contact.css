@@ -1,0 +1,288 @@
+* {
+	margin: 0;
+    padding: 0;
+}
+
+
+/* Body */
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Section 1 */
+
+.top {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 88vh;
+    z-index: 2;
+}
+
+section img{
+    width: 600px;
+    height: 480px;
+    margin: 30px;
+}
+
+h3{
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    bottom: 3.75em;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+section > span{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 1px;
+    height: 4em;
+    background-color: white;
+}
+
+/* Section 2 */
+
+.page-section {
+    /*display: flex;*/
+    margin:10%;
+    border: 2px  rgb(98, 205, 209) solid;
+    /*background-color: rgb(136, 205, 236);*/
+}
+
+iframe {
+    margin: 1em;
+    height: 600px;  
+    width: 50%;  
+    
+}
+
+.contact{
+    margin:1em;
+    margin-top:2.5em;
+    float: right;
+    float: right;
+    width: 40%;
+}
+p{
+    margin: 30px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    color:rgb(95, 89, 89);
+}
+
+.message{
+    border: 1px black solid;
+    margin: 1em;
+    padding: 1em;
+    padding-bottom: 15em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    color: gray;
+}
+
+.message > textarea[type=text]{
+    width: 80%;
+    flex-wrap: wrap;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    color: gray;
+    border: none;
+    margin:0;
+    padding:0;
+}
+
+.message > button{
+    float: right;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 12em;
+}
+
+.message >button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: darkblue;
+}
+
+
+.footer a{
+    position: relative;
+    left: 10em;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:none;
+}
+
+/* Newsletter */
+
+.Newsletter{
+    margin-left: 15em;
+    display: inline;
+}
+
+label{
+    padding: 1.2em;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    height: 23px;
+}
+
+.container {
+    display: inline-block;
+    margin-top: 10px;
+}
+  
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Varela Round', sans-serif;
+    text-transform:uppercase;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.link{
+    display: inline;
+}
+
+.social img{
+
+    float: right;
+    margin: 10px;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+@media screen and (max-width:538px){
+    .Newsletter{
+        margin-top: 1.5em;
+    }
+
+    label{
+        padding-left:0;
+    }
+
+}
+
+@media screen and (max-width: 706px){
+    input[type=text], input[type=submit]{
+        display: inline-block;
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media screen and ( max-width: 880px){
+    .menu{
+        margin-top:10px;
+    }
+    .menu li{
+        padding-bottom: 3px;
+    }
+
+    .menu a{
+        font-size: 20px;
+    }
+}
+
+@media screen and(max-width: 960px){
+
+    .Newsletter{
+        display: block;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    label{
+        display: block;
+
+    }
+
+    input[type=text], input[type=submit]{
+        display: block;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .page-section{
+        padding: 5px;
+    }
+
+    iframe{
+        width:100%;
+        margin:0;
+    }
+
+    .contact{
+        margin:0;
+        display: inline-block;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .Newsletter{
+        margin-left: 2em;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .footer a{
+        left:2em;
+        font-size: 15px;
+    }
+
+    label{
+        font-size: 15px;
+    }
+
+    .social img{
+        width: 25px;
+        height: 25px;
+    }
+
+    input[type=text], input[type=submit]{
+        padding: 5px;
+        width:100%;
+    }
+}

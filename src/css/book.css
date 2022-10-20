@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-sizing: border-box; */
+}
+
+/* Section 1 */
+
+#top {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 88vh;
+    z-index: 2;
+}
+
+
+h3{
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    bottom: 3.75em;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+section > span{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 1px;
+    height: 4em;
+    background-color:white;
+}
+
+/* Section 2*/
+
+.booking{
+    margin: 10%;
+    padding:2em;
+    /*border: gray 1px solid;*/
+    background-image: linear-gradient(to bottom right,  rgb(6, 163, 168), rgb(175, 223, 241));
+}
+
+.container{
+    width: 50%;
+    margin-left: 0;
+}
+
+.input-pack{
+    margin-bottom: 1.5em;
+}
+
+.input-label{
+    display: block;
+    margin-left: 2em;
+    margin-right: 1em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.input-text, .options{
+    margin-left: 2.3em;
+    border: none;
+    width: 80%;
+    height: 2em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: gray;
+
+}
+
+.input-btn{
+    margin-left: 2em;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color:rgb(77, 9, 167) ;
+    color: white;
+    width: 80%;
+    height: 2em;
+    cursor: pointer;
+}
+
+.input-btn:hover{
+    background-color: lightcoral;
+}
+
+.popup-overlay {
+    visibility: hidden;
+    position: absolute;
+    background:white;
+    width: 30%;
+    height: 30%;
+    top: calc(50% - 15%); 
+    left: calc(50% - 15%); 
+    z-index: 2;
+}
+  
+.popup-overlay.active {
+    visibility: visible;
+    text-align: center;
+}
+  
+.popup-content {
+    visibility: hidden;
+}
+  
+.popup-content.active {
+    visibility: visible;
+}
+  
+.popup-content > h1{
+    margin-top: 2em;
+    font-size: 30px;
+}
+
+.popup-content > p{
+    margin-top: 2px;
+    margin-bottom: 2em;
+    font-size: 20px;
+}
+
+button {
+    display: inline-block;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    margin: .20rem;
+    font-size: 20px;
+    color: white;
+    background: rgb(12, 204, 12);
+}
+  
+button:hover {
+    background: gray;
+    color: white;
+}
+  
+/* Section 3 */
+
+.container-right{
+    float: right;
+    width: 50%;
+    margin: 1em;
+}
+
+.frame{
+    margin: 0.5em;
+    background-color: gray;
+}
+
+.frame > img{
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    width: 70%;
+    height: 35%;
+}
+
+.frame > h2{
+    float: right;
+    margin: 1em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    color: white;
+}
+
+.frame >p{
+    float: right;
+    margin: 1em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    text-align: end;
+    color: white;
+}

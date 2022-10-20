@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
 
 <head>
     <meta charset="utf-8" />
@@ -44,39 +43,6 @@
             <a href="../index.html"><img src="../image/_20201009154713.png" /></a>
         </ul>
     </div>
-
-    
-    <?php
-        $servername = "mysql";
-        $username = "php";
-        $password = "php";
-        $dbname = "cloud_computing";
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-        }
-        echo "SQL connected successfully!" ;
-        echo "Server Info: ". mysqli_get_server_info($conn);
-
-    $sql = "CREATE TABLE IF NOT EXISTS `Contact` (
-        `name` varchar(255) NOT NULL,
-        `state` text NOT NULL,
-        `postcode` int(255) NOT NULL,
-        `phone` int(255) NOT NULL,
-        `email` varchar(255) NOT NULL,
-        `age` varchar(255) NOT NULL,
-        `favorite` text NOT NULL,
-        `comment` text NOT NULL
-      )";
-    
-    if ($conn->query($sql) === TRUE) {
-        echo "";
-    } else {
-        echo "Error creating table: " . $conn->error;
-    }
-    
-    $conn->close();
-    ?>
-
 
     <div id="main">
         <div>Message Us</div>
@@ -217,5 +183,3 @@
     <script src="../js/jquery-3.5.1.min.js"></script>
     <script src="../js/script.js"></script>
 </body>
-
-</html>

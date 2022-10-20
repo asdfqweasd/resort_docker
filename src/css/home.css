@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/Atlantis.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+section{
+    text-align: center;
+    margin-top: 20em;
+}
+
+h2{
+    font-size: 35px;
+    color: #f1f1f1;
+    padding: 1em;
+}
+
+.welcome{
+    /* border: 3px solid #f1f1f1; */
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    /* background-color: rgba(0,0,0, 0.4); */
+    cursor: pointer;
+}
+
+.welcome:hover{
+    border: 3px solid #f1f1f1;
+    background-color: rgba(0,0,0, 0.4);
+
+}
+
+a{
+    text-decoration: none;
+}
+

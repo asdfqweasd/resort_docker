@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.top {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 88vh;
+    z-index: 2;
+}
+
+
+h3{
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    bottom: 3.75em;
+    width: 100%;
+    text-align: center;
+}
+
+section > span{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 1px;
+    height: 4em;
+    background-color: black;
+}
+
+/* Section 2 */
+
+.page-section {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.page-center{
+    display:flex;
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+
+.page-center2{
+    display:flex;
+    justify-content: center;
+    display: flex;
+}
+
+.description{
+    width:50%;
+    float:right;
+    margin-top: 40px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+
+.description > h4{
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 35px;
+    color:black;
+    margin-right: 0;
+
+}
+
+.description >p{
+    margin-top: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    color:rgb(95, 89, 89);
+    margin-right: 0;
+}
+
+
+.left > h2{
+    margin-top: 80px;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    color:black;
+    margin-right: 0;
+}
+
+.left >p{
+    margin-top: 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    color:rgb(95, 89, 89);
+    margin-right: 0;
+}
+
+
+.right > h2{
+    margin-top: 80px;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    color:black;
+    margin-right: 0;
+}
+
+.right > img{
+    margin: 20px 30px 10px ;
+    margin-left: 0;
+    width: 48px;
+    height: 48px;
+}
+
+/* Slideshow */
+
+#slideshow {
+    overflow: hidden;
+    width: 600px;
+    height: 480px;
+    margin: 40px;
+}
+  
+.slide-wrapper {
+    width: 2912px;
+    animation: slide 15s ease infinite;
+}
+  
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+  
+@keyframes slide {
+    20% {margin-left: 0px;}
+    40% {margin-left: -728px;}
+    60% {margin-left: -728px;}
+}
+
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: darkblue;
+}
+
+
+.footer a{
+    position: relative;
+    left: 10em;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:none;
+}
+
+
+/* Newsletter */
+
+.Newsletter{
+    margin-left: 15em;
+    display: inline;
+}
+
+label{
+    padding: 1.2em;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    height: 23px;
+}
+
+.container {
+    display: inline-block;
+    margin-top: 10px;
+}
+  
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    background-color: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Varela Round', sans-serif;
+    text-transform:uppercase;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.link{
+    display: inline;
+}
+
+.social img{
+
+    float: right;
+    margin: 10px;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+@media screen and (max-width:538px){
+    .Newsletter{
+        margin-top: 1.5em;
+    }
+
+    label{
+        padding-left:0;
+    }
+}
+
+@media screen and (max-width:600px){
+    #slideshow{
+        width: 300px;
+        height: 240px;
+        margin:5px;
+    }
+
+}
+
+@media screen and (max-width: 706px){
+    input[type=text], input[type=submit]{
+        display: inline-block;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and ( max-width: 880px){
+    .menu{
+        margin-top:10px;
+    }
+    .menu li{
+        padding-bottom: 3px;
+    }
+
+    .menu a{
+        font-size: 20px;
+    }
+
+    #slideshow{
+        width:500px;
+        height: 400px;
+    }
+}
+
+@media screen and(max-width: 960px){
+
+    .Newsletter{
+        display: block;
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    label{
+        display: block;
+
+    }
+
+    input[type=text], input[type=submit]{
+        display: block;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .page-center, .page-center2{
+        align-items: center;
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+    .description{
+        display: inline-block;
+        overflow: hidden;
+        margin-bottom: 3em;
+        width:100%;
+    }
+
+    .description .left{
+        display: inline-block;
+        overflow: hidden;
+
+    }
+
+    .description .left >p{
+        font-size: 15px;
+    }
+
+    .description .right{
+        display: inline-block;
+        overflow:hidden;
+    }
+
+    .Newsletter{
+        margin-left: 2em;
+    }
+
+}
+
+@media screen and (max-width: 1400px){
+    .footer a{
+        left:2em;
+        font-size: 15px;
+    }
+
+    label{
+        font-size: 15px;
+    }
+
+    .social img{
+        width: 25px;
+        height: 25px;
+    }
+
+    input[type=text], input[type=submit]{
+        padding: 5px;
+        width:100%;
+    }
+}
+
+
+
+
