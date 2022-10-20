@@ -1,9 +1,9 @@
 <?php
 
 $serverName = "mysql";
-$db_user = "php";
-$db_pass = "php";
-$db_name = "cloud_computing";
+$username = "php";
+$password = "php";
+$dbname = "cloud_computing";
 
 $conn = mysqli_connect($serverName, $db_user, $db_pass, $db_name);
 

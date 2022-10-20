@@ -13,6 +13,35 @@
     <script src="https://kit.fontawesome.com/6233a8b1d1.js" crossorigin="anonymous"></script>
 
 </head>
+<?php
+        $servername = "mysql";
+        $username = "php";
+        $password = "php";
+        $dbname = "cloud_computing";
+
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        // sql to create table
+        $sql = "CREATE TABLE IF NOT EXISTS `user` (
+            `firstname` varchar(20) NOT NULL,
+            `lastname` varchar(20) NOT NULL,
+            `username` varchar(20) NOT NULL,
+            `email` varchar(30) NOT NULL,
+            `password` varchar(20) NOT NULL,
+            `passwordrepeat` varchar(20) NOT NULL
+          )";
+        
+        if ($conn->query($sql) === TRUE) {
+            echo "";
+        } else {
+            echo "Error creating table: " . $conn->error;
+        }
+
+        $conn->close();
+        ?>
 <body>
 
     <section class="signup-booking">
