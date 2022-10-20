@@ -47,7 +47,7 @@
         <p>Sign up and start sharing!</p>
         <hr>
         <div class="signup-container">
-            <form id="signup-form" action='includes/signup.inc.php' method='post'>
+            <form id="signup-form" action='includes/login.php' method='get'>
                 <div class='signup-left-right'>
                     <div class='signup-input-pack'>
                         <input type='text' class='signup-input-text-left' name='firstname' id='signup-firstname' placeholder="First Name"required>
