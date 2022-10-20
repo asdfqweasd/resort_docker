@@ -9,6 +9,8 @@ if(isset($_POST['submit'])){
     $password    = $_POST['password'];
     $passwordrepeat    = $_POST['passwordrepeat'];
 
+    echo $password
+    echo $passwordrepeat
     require_once 'dbh.inc.php';
     require_once 'function.inc.php';
 

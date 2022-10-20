@@ -16,10 +16,10 @@
 <?php
         $servername = "mysql";
         $username = "php";
-        $password = "php";
+        $pwd = "php";
         $dbname = "cloud_computing";
 
-        $conn = new mysqli($servername, $username, $password, $dbname);
+        $conn = new mysqli($servername, $username, $pwd, $dbname);
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
