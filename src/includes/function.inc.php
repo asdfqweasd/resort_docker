@@ -1,5 +1,12 @@
 <?php
 
+$servername = "mysql";
+$username = "php";
+$password = "php";
+$dbname = "cloud_computing";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
 function emptyInputSignup($firstname, $lastname, $username, $email, $password, $passwordrepeat) {
     $result;
     if (empty($firstname) || empty($lastname) || empty($username) || empty($email) || empty($passwordrepeat) || empty($passwordrepeat)) {
@@ -73,7 +80,7 @@ function uidExists($conn, $username, $email) {
 }
 
 function createUser($conn, $firstname, $lastname, $username, $email, $password) {
-    $sql = "INSERT INTO users (firstname, lastname, username, email, pwd) VALUES (?, ?, ?, ?, ?);";
+    $sql = "INSERT INTO users (firstname, lastname, username, email, pwd) VALUES ($firstname, $lastname, $username, $email, $password);";
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {

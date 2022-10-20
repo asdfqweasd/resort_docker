@@ -2,10 +2,10 @@
 
 $serverName = "mysql";
 $username = "php";
-$pwd = "php";
+$password = "php";
 $dbname = "cloud_computing";
 
-$conn = mysqli_connect($serverName, $username, $pwd, $dbname);
+$conn = mysqli_connect($serverName, $username, $password, $dbname);
 
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());

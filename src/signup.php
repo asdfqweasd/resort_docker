@@ -16,22 +16,21 @@
 <?php
         $servername = "mysql";
         $username = "php";
-        $pwd = "php";
+        $passoword = "php";
         $dbname = "cloud_computing";
 
-        $conn = new mysqli($servername, $username, $pwd, $dbname);
+        $conn = new mysqli($servername, $username, $passoword, $dbname);
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
 
         // sql to create table
-        $sql = "CREATE TABLE IF NOT EXISTS `user` (
+        $sql = "CREATE TABLE IF NOT EXISTS `users` (
             `firstname` varchar(20) NOT NULL,
             `lastname` varchar(20) NOT NULL,
             `username` varchar(20) NOT NULL,
             `email` varchar(30) NOT NULL,
-            `password` varchar(20) NOT NULL,
-            `passwordrepeat` varchar(20) NOT NULL
+            `pwd` varchar(20) NOT NULL
           )";
         
         if ($conn->query($sql) === TRUE) {
